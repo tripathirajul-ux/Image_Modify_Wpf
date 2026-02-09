@@ -1,0 +1,24 @@
+﻿<Window x:Class="Image_modify_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Image_modify_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="1500">
+	<Grid Background="#FF2B5C8D">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="110*"/>
+			<ColumnDefinition Width="79*"/>
+			<ColumnDefinition Width="0*"/>
+			<ColumnDefinition Width="111*"/>
+		</Grid.ColumnDefinitions>
+		<Image x:Name="InputImage" HorizontalAlignment="Left" Height="416" Margin="28,31,0,0" VerticalAlignment="Top" Width="454"/>
+		<Image x:Name="OutputImage" Grid.Column="3" HorizontalAlignment="Left" Height="408" Margin="33,31,0,0" VerticalAlignment="Top" Width="443"/>
+		<Button x:Name="SubmitButton" Click ="SubmitButton_Click" Grid.Column="1" Content="Submit" HorizontalAlignment="Left" Margin="314,174,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.578,0.576" Height="43" Width="71" Background="#FF111111"/>
+		<Button x:Name ="InputButton" Click ="InputButton_Click" Content="Take Image" HorizontalAlignment="Left" Height="29" Margin="66,300,0,0" VerticalAlignment="Top" Width="122" RenderTransformOrigin="0.903,0.59" Grid.Column="1"/>
+		<Button x:Name ="OutputButton" Click="OutputButton_Click" Grid.Column="1" Content="Take Output" HorizontalAlignment="Left" Height="29" Margin="252,300,0,0" VerticalAlignment="Top" Width="109"/>
+		<TextBox x:Name="TextInput"  TextChanged="TextInput_TextChanged" HorizontalAlignment="Left" Height="43" Margin="27,174,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200" Grid.Column="1"/>
+
+	</Grid>
+</Window>
